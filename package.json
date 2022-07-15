@@ -4,6 +4,7 @@
   "scripts": {
     "start": "bin/www",
     "develop": "nodemon -q bin/www",
+    "e2e:test" : "cypress open",
     "db:create": "./node_modules/.bin/sequelize-cli db:create",
     "db:drop": "./node_modules/.bin/sequelize-cli db:drop",
     "db:migrate": "./node_modules/.bin/sequelize-cli db:migrate",
@@ -14,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cypress": "^10.3.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "jest": "^28.1.3",
